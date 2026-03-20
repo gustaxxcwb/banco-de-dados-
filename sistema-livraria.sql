@@ -13,3 +13,10 @@ CREATE TABLE Compras (
     NomeLivro VARCHAR(150) NOT NULL,
     FOREIGN KEY (ClienteID) REFERENCES Clientes(ID)
 );
+
+SELECT 
+    c.nomeCliente,
+    co.NomeLivro
+FROM Compras co
+INNER JOIN Clientes c
+    ON co.ClienteID = c.ID;
