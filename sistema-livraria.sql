@@ -4,6 +4,7 @@ CREATE TABLE Clientes (
     nomeCliente VARCHAR(100) NOT NULL,
     emailCliente VARCHAR(100) UNIQUE NOT NULL
 );
+SELECT * FROM Clientes;
 
 -- Criação da tabela Compras
 CREATE TABLE Compras (
